@@ -9,7 +9,7 @@ class crud_controller extends Controller
     
     public function index()
     {
-        //return crud_model::all();
+        //return crud_model::all() fff;
         return DB::select('SELECT id,titulo,descricao FROM crud_models');
     }
     public function store(Request $request)
