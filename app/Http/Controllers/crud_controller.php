@@ -13,7 +13,7 @@ class crud_controller extends Controller
         $res= DB::select('SELECT id,titulo,descricao FROM crud_models');
         echo "<pre>";
           return $res;
-        echo "<pre/>";
+        echo "</pre>";
     }
     public function store(Request $request)
     {
